@@ -5,7 +5,7 @@ We present a novel modeling framework that recasts adapter tuning after attentio
 
 To address this challenge, we propose a new adapter architecture, $p$-adapter, which employs [$p$-Laplacian message passing](https://arxiv.org/abs/2111.07337) in GNNs. Specifically, the attention weights are re-normalized based on the features, and the features are then aggregated using the calibrated attention matrix, enabling the dynamic exploitation of information with varying frequencies in the heterophilic attention graphs.
 
-![]("https://github.com/wuhy68/p-Adapter.png")
+<img src="./img/p-adapter.pngf" width="700">
 
 This is the official Pytorch implementation of [p-Adapter](https://arxiv.org/abs/2312.10613). 
 
