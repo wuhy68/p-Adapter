@@ -2,8 +2,6 @@
 
 This is the official Pytorch implementation of p-Adapter. 
 
-(Coming soon...)
-
 ## Citation
 ```bibtex
 @article{wu2023p,
