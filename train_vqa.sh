@@ -1,0 +1,1 @@
+python -m torch.distributed.run --master_port=20001 --nproc_per_node=8 train_eff_vqa.py

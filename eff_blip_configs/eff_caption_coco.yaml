@@ -1,0 +1,42 @@
+image_root: './dataset/mscoco/'
+ann_root: './dataset/COCO_Caption/'
+coco_gt_root: './dataset/COCO_Caption/'
+
+# set pretrained as a file path or an url
+pretrained: './download_model/BLIP/model_base_capfilt_large.pth'
+
+# size of vit model; base or large
+vit: 'base'
+vit_grad_ckpt: False
+vit_ckpt_layer: 0
+
+batch_size: 16
+image_size: 224
+text_len: 40
+
+freeze: True
+
+# Adapter
+add_text_ffn_adapter: True
+text_ffn_adapter_reduction_factor: 8
+
+add_text_laplacian_adapter: True
+learnable_p: True
+laplacian_adapter_p_self : 1.75
+laplacian_adapter_p_cross : 1.75
+laplacian_adapter_mu : 0.1
+text_laplacian_adapter_reduction_factor: 8
+image_sample_len : 24
+
+# generation eff_blip_configs
+max_length: 40
+min_length: 5
+num_beams: 5
+
+prompt: 'What does the image describe? '
+
+# optimizer & scheduler
+lr: 3e-4
+weight_decay: 0.05
+max_epoch: 2
+warmup_ratio: 0

@@ -1,0 +1,50 @@
+image_root: './dataset/SNLI-VE/data/Flickr30K/images/' #followed by image/
+ann_root: './dataset/SNLI-VE/data/'
+
+# set pretrained as a file path or an url
+pretrained: './download_model/BLIP/model_base_capfilt_large.pth'
+
+# size of vit model; base or large
+vit: 'base'
+vit_grad_ckpt: False
+vit_ckpt_layer: 0
+
+batch_size_train: 8
+batch_size_test: 4
+image_size: 224
+text_len: 100
+
+freeze: True
+
+# Adapter
+add_text_ffn_adapter: True
+text_ffn_adapter_reduction_factor: 8
+
+add_text_laplacian_adapter: True
+learnable_p: True
+laplacian_adapter_p_self : 1.5
+laplacian_adapter_p_cross : 1.5
+laplacian_adapter_mu : 10
+text_laplacian_adapter_reduction_factor: 8
+image_sample_len : 24
+
+add_query_adapter: False
+add_key_adapter: False
+lora_r: 8
+lora_alpha: 32
+
+inference: 'rank'
+
+# generation eff_blip_configs
+max_length: 50
+min_length: 1
+num_beams: 3
+
+# rank eff_blip_configs
+k_test: 3
+
+# optimizer & scheduler
+lr: 5e-4
+weight_decay: 0.05
+max_epoch: 5
+warmup_ratio: 0
