@@ -36,7 +36,7 @@ bash train_snli_ve.sh
 ```bash
 # Download VQA v2 dataset from the original websites in "./dataset/".
 
-train_vqa.sh
+bash train_vqa.sh
 ```
 
 ## Acknowledgement
