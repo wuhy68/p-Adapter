@@ -1,5 +1,5 @@
 # p-Laplacian Adaptation for Generative Pre-trained Vision-Language Models (AAAI'24 Oral)
-<img src="./img/p-adapter.png" width="700">
+<img src="./img/p-adapter.png">
 
 ## Introduction
 We present a novel modeling framework that recasts adapter tuning after attention as a graph message passing process on attention graphs, where the projected query and value features and attention matrix constitute the node features and the graph adjacency matrix, respectively. Within this framework, tuning adapters in VLMs necessitates handling heterophilic graphs, owing to the disparity between the projected query and value space.
